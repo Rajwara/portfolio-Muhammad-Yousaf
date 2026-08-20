@@ -10,10 +10,10 @@ export default function About() {
         <div className="mx-auto w-56 flex-shrink-0 rounded-2xl bg-white p-3 shadow-md dark:bg-gray-800 lg:mx-0 lg:-rotate-3">
           <div className="relative h-60 w-full overflow-hidden rounded-xl bg-violet-100 dark:bg-violet-900/20 md:h-72">
             <Image
-              src="/images/placeholder-avatar.svg"
-              alt="About section placeholder"
+              src="/images/image2.webp"
+              alt={siteData.main.name}
               fill
-              className="object-cover grayscale transition-all hover:grayscale-0"
+              className="object-cover object-top grayscale transition-all hover:grayscale-0"
             />
           </div>
           <p className="mt-2 text-center text-sm font-medium">{`< ${siteData.about.title} />`}</p>

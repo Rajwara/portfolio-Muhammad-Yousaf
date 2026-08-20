@@ -77,12 +77,12 @@ export default function Hero() {
         <div className="relative flex-shrink-0">
           <div className="h-56 w-56 overflow-hidden rounded-full shadow-2xl md:h-80 md:w-80">
             <Image
-              src="/images/placeholder-avatar.svg"
-              alt="Profile placeholder"
+              src="/images/image.webp"
+              alt={siteData.main.name}
               width={320}
               height={320}
               priority
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-top"
             />
           </div>
 

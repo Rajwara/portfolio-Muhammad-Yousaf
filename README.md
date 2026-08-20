@@ -22,17 +22,13 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Still placeholder — replace before going live
 
-- **Images** — `/public/images/placeholder-avatar.svg`, `placeholder-project.svg`, and
-  `placeholder-contact.svg` are generic SVG placeholders. Swap in real photos/screenshots with
-  the same filenames (or update the `src` paths in the components) and remove
-  `images.unoptimized` / `dangerouslyAllowSVG` from `next.config.js` once you're using raster
-  images.
+- **Project/contact images** — `/public/images/placeholder-project.svg` and
+  `placeholder-contact.svg` are generic SVG placeholders. Swap in real photos/screenshots with the
+  same filenames (or update the `src` paths in the components). The hero and about photos
+  (`image.webp`, `image2.webp`) are already real.
 - **Resume** — `siteData.about.resumeUrl` points to `/docs/resume-placeholder.pdf`, which doesn't
   exist yet. Add the real PDF at `public/docs/` and update the path in `lib/data.ts`.
-- **LinkedIn / GitHub links** — in `lib/data.ts`, the `socials` array has `link: "#"` for LinkedIn
-  and GitHub (marked with `// TODO` comments) — the LinkedIn URL was cut off on the source CV, and
-  no GitHub was listed. Fill in the real URLs.
-- **Project links** — every project in `siteData.projects` has `code`/`visit` set to `"#"`. Add
+- **Project links** — every project in `siteData.projects` has `links.visit` set to `"#"`. Add
   real links once available, or edit the project entries themselves (they're currently
   representative examples generated from the CV's experience bullets, not named real projects).
 - **Contact form** — `components/Contact.tsx` simulates a submission client-side only; no email is
