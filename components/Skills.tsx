@@ -16,13 +16,13 @@ export default function Skills() {
     <section id="skills" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
       <h2 className="text-center text-4xl">Skills</h2>
 
-      <div className="scroll-hide mx-auto mt-6 flex max-w-2xl gap-2 overflow-x-auto rounded-md bg-white p-2 dark:bg-gray-800">
+      <div className="scroll-hide mx-auto mt-6 flex w-fit max-w-full gap-2 overflow-x-auto rounded-md bg-white p-2 dark:bg-gray-800">
         {tabs.map((c) => (
           <button
             key={c}
             type="button"
             onClick={() => setActive(c)}
-            className={`w-full whitespace-nowrap rounded-md px-3 py-2 text-sm transition-colors md:text-base ${
+            className={`flex-shrink-0 whitespace-nowrap rounded-md px-3 py-2 text-sm transition-colors md:text-base ${
               active === c
                 ? "bg-violet-600 text-white"
                 : "hover:bg-gray-100 dark:hover:bg-gray-700"
