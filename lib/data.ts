@@ -10,7 +10,6 @@ export interface Project {
   techstack: string;
   overview: string;
   links: {
-    code: string;
     visit: string;
   };
 }
@@ -32,7 +31,7 @@ export interface EducationItem {
 
 export interface SocialLink {
   name: string;
-  icon: "linkedin" | "github" | "email" | "phone" | "whatsapp";
+  icon: "linkedin" | "email" | "phone" | "whatsapp";
   link: string;
 }
 
@@ -96,7 +95,7 @@ export const siteData = {
       techstack: "n8n, LLM Agents, CRM APIs",
       overview:
         "An AI-powered agent that automatically captures, enriches, qualifies, and routes inbound leads to the right sales rep, cutting manual follow-up time.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
     {
       id: "ghl-crm-automation-suite",
@@ -105,7 +104,7 @@ export const siteData = {
       techstack: "GoHighLevel (GHL), monday.com, Webhooks",
       overview:
         "End-to-end automation connecting GoHighLevel and CRM systems for sales pipelines, automated task creation, and reporting.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
     {
       id: "multi-app-data-sync-pipeline",
@@ -114,7 +113,7 @@ export const siteData = {
       techstack: "Zapier, Make.com, REST APIs",
       overview:
         "Automated data synchronization across multiple business applications, eliminating manual data entry between tools.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
     {
       id: "ai-workflow-platform",
@@ -123,7 +122,7 @@ export const siteData = {
       techstack: "n8n, LLM Integration, Webhooks",
       overview:
         "LLM-powered workflows that handle repetitive business processes end-to-end, from trigger to notification.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
     {
       id: "fullstack-django-flask-app",
@@ -132,7 +131,7 @@ export const siteData = {
       techstack: "Python, Django, Flask, REST APIs",
       overview:
         "A full-stack web application built and maintained end to end, with integrated REST APIs connecting frontend and backend services.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
     {
       id: "business-process-automation-toolkit",
@@ -141,7 +140,7 @@ export const siteData = {
       techstack: "API Integration, Authentication, Databases",
       overview:
         "A toolkit that converts manual, repetitive business processes into automated workflows with authentication, authorization, and database-backed logic.",
-      links: { code: "#", visit: "#" },
+      links: { visit: "#" },
     },
   ] satisfies Project[],
 
@@ -203,8 +202,6 @@ export const siteData = {
 
   socials: [
     { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/-yousaf2/" },
-    // TODO: add GitHub profile URL if available
-    { name: "GitHub", icon: "github", link: "#" },
     { name: "Email", icon: "email", link: "mailto:yusuf24work@gmail.com" },
     { name: "Phone", icon: "phone", link: "tel:+923174731492" },
     { name: "WhatsApp", icon: "whatsapp", link: "https://wa.me/923174731492" },

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FiEye, FiGithub } from "react-icons/fi";
+import { FiEye } from "react-icons/fi";
 import { siteData } from "@/lib/data";
 
 export default function Projects() {
@@ -59,16 +59,6 @@ export default function Projects() {
                   className="rounded-lg bg-white p-3 text-black transition-transform hover:scale-110 hover:bg-black hover:text-white"
                 >
                   <FiEye size={18} />
-                </a>
-                <a
-                  href={project.links.code}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`View ${project.name} source code`}
-                  title={`View ${project.name} source code`}
-                  className="rounded-lg bg-white p-3 text-black transition-transform hover:scale-110 hover:bg-black hover:text-white"
-                >
-                  <FiGithub size={18} />
                 </a>
               </div>
             </div>
