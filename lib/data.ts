@@ -202,8 +202,7 @@ export const siteData = {
   ] satisfies EducationItem[],
 
   socials: [
-    // TODO: replace with Muhammad's real LinkedIn profile URL (was truncated on the CV)
-    { name: "LinkedIn", icon: "linkedin", link: "#" },
+    { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/-yousaf2/" },
     // TODO: add GitHub profile URL if available
     { name: "GitHub", icon: "github", link: "#" },
     { name: "Email", icon: "email", link: "mailto:yusuf24work@gmail.com" },
